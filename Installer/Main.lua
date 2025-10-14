@@ -13,7 +13,7 @@ local EEPROMAddress, internetAddress, GPUAddress =
 component.invoke(GPUAddress, "bind", getComponentAddress("screen"))
 local screenWidth, screenHeight = component.invoke(GPUAddress, "getResolution")
 
-local repositoryURL = "https://raw.githubusercontent.com/Mariokart6wastaken/MineOS/master/"
+local repositoryURL = "https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/"
 local installerURL = "Installer/"
 local EFIURL = "EFI/Minified.lua"
 
@@ -38,7 +38,7 @@ end
 
 local function title()
 	local y = math.floor(screenHeight / 2 - 1)
-	centrizedText(y, 0x2D2D2D, "CitrusCo")
+	centrizedText(y, 0x2D2D2D, "MineOS")
 
 	return y + 2
 end
@@ -144,10 +144,12 @@ do
 	end
 
 	if component.invoke(GPUAddress, "getDepth") ~= 8 then
-		warning("Tier 3 GPU and screen are recommended")
+		warning("Tier 3 GPU and screen are required")
+	end
 
-	if computer.totalMemory() < 1024 * 1024 * 1 then
-		warning("At least 1 Tier 3.5 RAM modules are recommended")
+	if computer.totalMemory() < 1024 * 1024 * 2 then
+		warning("At least 2x Tier 3.5 RAM modules are required")
+	end
 
 	-- Searching for appropriate temporary filesystem for storing libraries, images, etc
 	for address in component.list("filesystem") do
