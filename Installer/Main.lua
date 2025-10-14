@@ -12,11 +12,9 @@ local EEPROMAddress, internetAddress, GPUAddress =
 -- Binding GPU to screen in case it's not done yet
 component.invoke(GPUAddress, "bind", getComponentAddress("screen"))
 local screenWidth, screenHeight = component.invoke(GPUAddress, "getResolution")
-
 local repositoryURL = "https://raw.githubusercontent.com/Mariokart6wastaken/MineOS/master/"
 local installerURL = "Installer/"
 local EFIURL = "EFI/Minified.lua"
-
 local installerPath = "/Yuzu installer/"
 local installerPicturesPath = installerPath .. "Installer/Pictures/"
 local OSPath = "/"
