@@ -58,7 +58,7 @@ end
 
 -- Checking if installer can be downloaded from GitHub, because of PKIX errors, server blacklists, etc
 do
-	local success, result = pcall(component.internet.request, "https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/Installer/Main.lua")
+	local success, result = pcall(component.internet.request, "https://raw.githubusercontent.com/Mariokart6wastaken/MineOS/master/Installer/Main.lua")
 
 	if not success then
 		if result then
