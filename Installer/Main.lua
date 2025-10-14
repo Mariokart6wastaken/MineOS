@@ -660,7 +660,7 @@ addStage(function()
 	workspace:draw()
 	
 	component.invoke(EEPROMAddress, "set", request(EFIURL))
-	component.invoke(EEPROMAddress, "setLabel", "MineOS EFI")
+	component.invoke(EEPROMAddress, "setLabel", "Yuzu EFI")
 	component.invoke(EEPROMAddress, "setData", selectedFilesystemProxy.address)
 
 
