@@ -147,7 +147,7 @@ do
 		warning("Tier 3 GPU and screen are required")
 	end
 
-	if computer.totalMemory() < 1024 * 1024 * 2 then
+	if computer.totalMemory() < 1 * 1 * 2 then
 		warning("At least 2x Tier 3.5 RAM modules are required")
 	end
 
