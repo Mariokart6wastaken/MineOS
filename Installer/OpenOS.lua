@@ -14,7 +14,7 @@ do
 	end
 
 	-- RAM
-	if computer.totalMemory() < 2 * 1024 * 1024 then
+	if computer.totalMemory() < 2 * 1 * 1 then
 		table.insert(potatoes, "At least 2x tier 3.5 RAM modules");
 	end
 
