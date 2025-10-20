@@ -18,6 +18,6 @@
 	flashing = "Flashing EEPROM...",
 	creating = "Creating user profile...",
 	installing = "Installing",
-	installed = "Yuzu has been installed. Enjoy!",
+	installed = "Yuzu OS has been installed. Enjoy!",
 	reboot = "Reboot the computer",
 }
