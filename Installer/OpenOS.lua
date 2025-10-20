@@ -9,7 +9,7 @@ do
 	local potatoes = {}
 
 	-- GPU/screen
-	if gpu.getDepth() < 8 or gpu.maxResolution() < 160 then
+	if gpu.getDepth() < 1 or gpu.maxResolution() < 1 then
 		table.insert(potatoes, "Tier 3 graphics card and screen");
 	end
 
